@@ -1,0 +1,5 @@
+[onlyoffice]
+name=onlyoffice repo
+baseurl=http://download.onlyoffice.com/repo/centos/main/noarch/
+gpgcheck=1
+enabled=1
