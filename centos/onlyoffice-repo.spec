@@ -34,12 +34,13 @@ install -Dpm 644 ../../RPM-GPG-KEY-ONLYOFFICE \
 rm -rf "%{buildroot}"
 
 %files
-%config %attr(-, root, root) /etc/yum.repos.d/onlyoffice.repo
-%config(noreplace) /etc/pki/rpm-gpg/*
+%config %attr(-, root, root) %{_sysconfdir}/yum.repos.d/onlyoffice.repo
+%config(noreplace) %{_sysconfdir}/pki/rpm-gpg/*
 
 %pre
 
 %post
+/bin/rpm --import %{_sysconfdir}/pki/rpm-gpg/RPM-GPG-KEY-ONLYOFFICE
 
 %preun
 
