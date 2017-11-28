@@ -1,5 +1,5 @@
-Adding ONLYOFFICE repository
+Adding ONLYOFFICE repository on CentOS and derivatives
 
 ```
-sudo yum install https://github.com/ONLYOFFICE/repo/releases/download/v1.0.0.9/onlyoffice-repo.noarch.rpm
+sudo yum install http://download.onlyoffice.com/repo/centos/main/noarch/onlyoffice-repo.noarch.rpm
 ```
