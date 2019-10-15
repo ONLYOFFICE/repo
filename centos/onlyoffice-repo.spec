@@ -40,7 +40,6 @@ rm -rf "%{buildroot}"
 %pre
 
 %post
-/bin/rpm --import %{_sysconfdir}/pki/rpm-gpg/RPM-GPG-KEY-ONLYOFFICE
 
 %preun
 
